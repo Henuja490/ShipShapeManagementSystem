@@ -9,5 +9,27 @@ package Code;
  * @author henuj
  */
 public class Order_products {
+    private int OrderID;
+    private String Customer;
+    private String product[];
+    private String Date;
+    private String status;
+
+    public Order_products(int OrderID, String Customer, String[] product, String Date) {
+        this.OrderID = OrderID;
+        this.Customer = Customer;
+        this.product = product;
+        this.Date = Date;
+        status = "Preparing";
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+    
+    
+    
+    
+    
     
 }
