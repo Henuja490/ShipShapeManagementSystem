@@ -4,15 +4,15 @@
  */
 package GUI;
 
+
 import javax.swing.JOptionPane;
-import GUI.AdminControl;
+
 /**
  *
  * @author henuj
  */
 public class Login extends javax.swing.JFrame {
 
-    AdminControl ac = new AdminControl();
     
     /**
      * Creates new form Login
@@ -157,7 +157,8 @@ public class Login extends javax.swing.JFrame {
         if(type.equals("Admin")){
             if(Name.equals("Admin")&& Password.equals("Shipshape123")){
                 JOptionPane.showMessageDialog(null,"You have successfully login as Admin");
-                JOptionPane.setRootFrame(ac);
+                
+                
             }else{
                 JOptionPane.showMessageDialog(null,"Incorrect password or username");
             }
